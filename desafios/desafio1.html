@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - 1</title>
+</head>
+<body>
+    <h1></h1>
+    <button onclick="cliquei()">Clique</button>
+    <button onclick="alerta()">Alerta</button>
+    <button onclick="windowPrompt()">Prompt</button>
+    <button onclick="soma()">Soma</button>
+    <script>
+        let titulo = document.querySelector('h1')
+        titulo.innerHTML = 'Hora do Desafio'
+
+        function cliquei() {
+            console.log('O botão foi clicado')
+        }
+
+        function alerta() {
+            alert("Eu amo o JS")
+        }
+
+        function windowPrompt() {
+           let cidade = prompt("Fale uma cidade do Brasil")
+           alert(`Estive em ${cidade} e lembrei de você`)
+        }
+
+        function soma() {
+            let numero1 = Number(prompt("Digite um número"))
+            let numero2 = Number(prompt("Digite mais um número"))
+            let soma = numero1 + numero2
+            alert(`A soma desses dois números é: ${soma}`)
+        }
+    </script>
+</body>
+</html>
